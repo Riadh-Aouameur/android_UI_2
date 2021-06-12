@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="131dp"
+        android:layout_height="145dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/porridge" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lobster"
+        android:text="Porridge"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textScaleX="2"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t1"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="  R  E  S  T  A  U  R  A  N  T  "
+        android:textColor="@color/black" />
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bk">
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/lobster"
+                android:text="Welcome"
+                android:textColor="@color/black"
+                android:textSize="38sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t3"
+                android:layout_marginStart="30dp"
+                android:text="The best food application\nAlgeria ."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="30dp"
+
+                android:layout_marginLeft="11dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/buuk"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="16dp"
+
+                android:paddingBottom="16dp"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginRight="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginBottom="50dp"
+
+                android:background="@drawable/buk"
+
+                android:paddingTop="16dp"
+
+
+                android:paddingBottom="16dp"
+                android:text="Sign Up"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/rightarrow"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+    android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lobster"
+        android:text="Sign IN"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_2"
+        android:layout_marginStart="30dp"
+
+
+        android:text="Register and enjoy all the healthy\nfood ."
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/c1"
+        android:background="@color/c1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bw">
+
+            <EditText
+                android:id="@+id/ed_1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="71dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/cursor"
+                android:hint="EMAIL"
+                android:paddingLeft="16dp" />
+
+            <EditText
+                android:id="@+id/ed_2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/ed_1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="147dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/cursor"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="16dp" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:layout_below="@id/ed_2"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginEnd="22dp"
+
+                android:text="Forgot password ? "
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="16dp"
+                android:layout_below="@id/tv_1"
+                android:background="@drawable/buuk"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cd"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+              android:layout_marginBottom="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+
+                android:layout_below="@id/btn"
+                app:cardCornerRadius="60dp"
+                app:cardBackgroundColor="@color/white"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/h">
+
+                    <ImageView
+                        android:id="@+id/i2"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/google" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:textSize="22sp"
+                        android:text="Continue with Google" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/cd"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+
+                app:cardCornerRadius="60dp"
+                app:cardBackgroundColor="@color/white"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/h">
+                    <ImageView
+                        android:id="@+id/i1"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                       android:layout_centerVertical="true"
+                        android:textSize="22sp"
+                        android:text="Continue with Facebook " />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
